@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Handlee|Open+Sans&display=swap');
 
 * {
     box-sizing: border-box;
@@ -55,6 +55,17 @@ body {
     border-radius: 10px;
     margin-top: 22px;
     user-select: none;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
 
 .map {

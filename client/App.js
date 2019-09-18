@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useEffect, useState} from 'react';
 import MapboxGLMap from './components/mapComponent';
 import './styles/styles.scss';
 import CardGrid from './components/cardsComponent';
@@ -6,13 +6,22 @@ import ContainedButtons from './components/buttonComponents';
 
 
 const App = () => {
-    // const [map, updateMap] = useState(null);
-    // const [cards, updateCards] = useState(null);
+    const [map, updateMap] = useState(null);
+    const [cards, updateCards] = useState(null);
+    const [inputValue, updateValue] = useState(null);
 
-    // const handleButtonClick = () => {
-    //     updateMap(map)
-    //     updateCards(cards)
-    // }
+    const handleEvent = (e) => {
+        // fetch('/search', {
+        //     // method: 'POST', 
+        //     // body: JSON.stringify({searchString: `${e.target.value}`})
+        //   })
+          console.log(e.target.value);
+    }
+
+     useEffect(() => {
+         updateMap(map);
+         updateCards(cards);
+  })
     return(
         <div>
         <div className="headline">
@@ -21,7 +30,7 @@ const App = () => {
         <h1 className="main-heading">PLANTfare</h1>
         </div>
         <div className="right-column">
-        <input className="search"/>
+        <input className="search"  onChange={handleEvent}/>
         <ContainedButtons />
         </div>
         </div>
