@@ -1,14 +1,23 @@
 import React, {useState} from 'react';
+import { DropDownInfo } from './dropDownInfo';
+import MenuIcon from '@material-ui/icons/Menu';
+
 
 const Card = () => {
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    const handleDropDownClick = () => {
+        setModalOpen(isModalOpen ? false: true);
+    }
+    
     return (
         <div className="cards">
-        <div>
-        Hello
-    </div>
-    <div>
-        This is a card
-    </div>
+    <div className="material-icons">
+    <MenuIcon onClick={handleDropDownClick} id="hamburger-menu" className="material-icons"></MenuIcon>
+          {isModalOpen ? <DropDownInfo /> :    <div className="no-render">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </div>}
+          </div>
     </div>
     )
    

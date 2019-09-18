@@ -21,7 +21,7 @@
   "homepage": "https://github.com/Tburrington/VY#readme",
   "dependencies": {
     "@material-ui/core": "^4.3.0",
-    "@material-ui/icons": "^4.2.1",
+    "@material-ui/icons": "^4.4.1",
     "awesome-typescript-loader": "^5.2.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",

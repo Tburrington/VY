@@ -9,7 +9,7 @@ const CardGrid = () => {
 
     const membersArray = []
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 6; i++) {
       membersArray.push(
         <Card
           key={i}
