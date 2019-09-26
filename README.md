@@ -10,12 +10,12 @@ Currently:
 Details: 
 
 Landing Page for Plantfare La:
-![Home Page][./markdownimages/homepage.png]
+![Home Page](./markdownimages/homepage.png)
 
 
 
 Once you submit a search the page updates with a pattern of cards representing restaraunts starting with those closest to you. 
-![Home Page Search][./markdownimages/morehomepage.png]
+![Home Page Search](./markdownimages/morehomepage.png)
 
 The list of cards appears as so:
-![Home Page Cards][./markdownimages/evenmorehomepage.png]
+![Home Page Cards](./markdownimages/evenmorehomepage.png)
