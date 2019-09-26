@@ -14,7 +14,7 @@ Landing Page for Plantfare La:
 
 
 
-Once you submit a search the page updates with a pattern of cards representing restaraunts starting with those closest to you. 
+Once you submit a search the page updates with a pattern of cards representing restaurants starting with those closest to you. 
 ![Home Page Search](/markdownimages/morehomepage.png)
 
 The list of cards appears as so:
