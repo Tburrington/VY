@@ -19,12 +19,6 @@ const useStyles = makeStyles(theme => ({
     },
   }));
 
-// interface cards {
-//   name: string;
-//   address: string;
-//   coordinates: Array<number>
-//   reviews: Array<string>
-// }
 
 const App: React.FC = () => {
     const classes = useStyles({});
